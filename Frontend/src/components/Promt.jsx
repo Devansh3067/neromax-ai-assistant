@@ -61,7 +61,7 @@ function Promt({ selectedSessionId, onNewSessionCreated, collapsed }) {
     try {
       const token = localStorage.getItem("token");
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/neromaxai/promt",
+        "https://neromax-ai-assistant-3.onrender.com/api/v1/neromaxai/promt",
         { content: trimmed },
         {
           headers: { Authorization: `Bearer ${token}` },
