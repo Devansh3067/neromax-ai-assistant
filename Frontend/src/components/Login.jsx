@@ -29,7 +29,7 @@ function Login() {
     setError("");
     try {
       const { data } = await axios.post(
-        "https://neromax-aiassistant.onrender.com/api/v1/user/login",
+        "https://neromax-aiassistant.onrender.com/user/login",
         {
           email: formData.email,
           password: formData.password,
