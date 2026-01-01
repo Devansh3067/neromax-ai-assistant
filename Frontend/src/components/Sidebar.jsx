@@ -87,7 +87,7 @@ function Sidebar({ open, setOpen, onSelectSession, selectedSessionId }) {
   const handleLogout = async () => {
     try {
       const { data } = await axios.get(
-        "https://neromax-aiassistant.onrender.com/api/v1/user/logout",
+        "https://neromax-aiassistant.onrender.com/logout",
         {
           withCredentials: true,
         }
