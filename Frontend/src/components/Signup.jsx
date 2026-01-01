@@ -29,7 +29,7 @@ function Signup() {
     setError("");
     try {
       const { data } = await axios.post(
-        "https://neromax-ai-assistant-3.onrender.com/api/v1/user/signup",
+        "https://neromax-aiassistant.onrender.com/api/v1/user/signup",
         {
           firstName: formData.firstName,
           lastName: formData.lastName,
