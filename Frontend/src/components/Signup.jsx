@@ -36,9 +36,7 @@ function Signup() {
           email: formData.email,
           password: formData.password,
         },
-        {
-          withCredentials: true,
-        }
+        
       );
       alert(data.message || "Signup Succeeded");
       navigate("/login");
